@@ -75,7 +75,16 @@ $(document).ready(function() {
 
     $(".btn").click(function(e) {
         var btnId = this.id;
+        $(`#${btnId}`).animate({
 
+            height: '180px',
+            width: '180px'
+        });
+        $(`#${btnId}`).animate({
+
+            height: '200px',
+            width: '200px'
+        });
         if (gameStpes.length > playerPreess.length) {
 
             if (gameStpes[countStep] == btnId) {
