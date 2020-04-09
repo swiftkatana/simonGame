@@ -64,11 +64,12 @@ $(document).ready(function() {
     }
 
     $(document).keypress(function(e) {
-        if (gameStpes.length == 0 && e.key == "a" || e.key == "A") {
+        if (gameStpes.length == 0 && e.code == "KeyA") {
             ChangeTitle("Good Luck!!");
 
             addStep();
         }
+        console.log(e.which);
 
     });
 
